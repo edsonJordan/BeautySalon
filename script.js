@@ -11,7 +11,6 @@ window.addEventListener('scroll', (e)=>{
 
 let play = false;
 document.getElementById("btn_run").addEventListener("click", function(e) {
-    e.preventDefault();
     const btnPlay = document.getElementById("video1");
     const audioPlay = document.getElementById("audio1");
     if(!play){

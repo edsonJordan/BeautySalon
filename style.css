@@ -15,12 +15,20 @@
     --color-gray-light:#686868;
     --color-light-golden:#F5F5F5;
 }
+*{
+    scroll-behavior: smooth;
+}
+
+
 body{
     width: calc(100% - calc(100%- 100vw));
     height: 100vh;
     padding: 0px;
     margin: 0px;
     font-family: 'Work Sans', sans-serif;
+  
+    
+    
 }
 ul{
     list-style: none;
@@ -54,10 +62,7 @@ input{
     box-sizing: border-box;
 }
 /* Components */
-.section{
-    position: relative;
-    width: 100%;
-}
+
 .img{
     align-self: center;
 }
@@ -103,6 +108,8 @@ input{
         /* End animation components */
    
 /* End Components */
+
+
 
 .navigation{
     position: fixed;
@@ -185,7 +192,7 @@ input{
     position: absolute;
     z-index: 20;
     width: 100%;
-    height: 300%;
+    height: 500%;
     top: 0;
     left: 0;
     display: flex;
@@ -211,7 +218,10 @@ input{
     align-items: center;
     justify-content: center;
 }
-
+.section{
+    position: relative;
+    width: 100%;
+}
 .section__frontpage{
     display: flex;
     flex-direction: column;
@@ -547,10 +557,10 @@ input{
             justify-content: center;
             background-repeat: no-repeat;
             background-position: 70px 0%;
-            height: 500px;
+            height: 400px;
         }
         .img__treatment{
-            box-sizing: inherit;
+            object-fit: contain;
             display: block;
             width:  90%;
             height: 90%;
@@ -850,7 +860,7 @@ input{
         }
         .list__links .h4__link{
             font-family: 'DM Serif Display', serif;
-            color: var(--color-secondary);
+            color: var(--color-light-golden);
             font-size: 1.5em;
             letter-spacing: .1em;
         }
@@ -874,10 +884,7 @@ input{
             font-weight: 600;
             color: var(--color-white);
         }
-
         /* End section Footer */
-
-
         @media (min-width: 768px) {  
             .logo{
                 width: 15%;
@@ -963,8 +970,10 @@ input{
                 height: 650px;
             }
             .img__treatment{
+                object-fit: cover;
+                
                 align-self: flex-start;
-                width:60%
+                width:75%
             }
             /* End Section Treatment */
 
@@ -1075,13 +1084,10 @@ input{
                 width: 80%;
             }
             /* End Section Footer */
-
             .btn{
                 border-radius: 0;
             }
-
         }
-
         @media (min-width: 1024px) { 
             .svg__logo {
                 width: 10%;
@@ -1140,7 +1146,6 @@ input{
                 flex-direction: row;
             }
             /* End Section You Hair */
-
             /* Start Section treatment  */
             .section__treatment {
                 flex-direction: row;
@@ -1171,18 +1176,12 @@ input{
                 padding: .7rem 3.5rem;
                 height: max-content;
             }
-
             /* End Sectionn treatment */
-
-
             /* Start Section Our Salon */
             .content__outsalon .h2{
                 font-size: 4em;
             }
-        
             /* End Section our Salon */
-
-
             /* Start Section Model */
             .content__model .span__light{
                 font-size: 2em;
@@ -1210,7 +1209,6 @@ input{
                 font-size: .8em;
             }
             /* End Section model */
-
             /* Start Section Newsletter */
             .section__newsletter{
                 display: flex;
@@ -1232,7 +1230,6 @@ input{
                 object-fit: contain;
             }
             /* End Section Newsletter */
-
             /*Start  Section footer */
             .content__footer{
                 padding: 2rem 4rem;
@@ -1257,13 +1254,11 @@ input{
             .block__icons .svg__logo{
                 width: 35%;
             }
-            
             .footer__link{
                 flex-direction: row;
                 justify-content: flex-end;
                 column-gap: 4.5rem;
             }
-
             .list__links{
                 text-align: left;
                 row-gap: 1.1rem;
@@ -1279,7 +1274,6 @@ input{
             }
             /* End Section Footer */
         }
-
         @media (min-width: 1424px) {
             .btn-navigation{
                 width: 2%;
@@ -1300,9 +1294,7 @@ input{
             .img__yourhair{
                 width: 50%;
             }
-           
         }
 .none{
     display: none;
 }
-
